@@ -2,13 +2,41 @@
 <html>
 <head>
   <title>DropzoneRails</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <div class="header">
+    <br>
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="http://stark-castle-1300.herokuapp.com/">Online Demo Link</a></li>
+    </ul>
+    <br>
+    <h3 class="text-muted">Rails - File upload with Dropezone.js & Paperclip</h3>
+  </div>
+
+  <%= yield %>
+
+  <div class="footer">
+    <p>&copy; Company 2016</p>
+  </div>
+
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
 </body>
 </html>
